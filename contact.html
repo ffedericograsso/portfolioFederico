@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Federico Alfio Grasso – Contatti</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="nav-logo">Federico Alfio Grasso</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTATTI -->
+  <section class="contact">
+    <div class="contact-header">
+      <h1>Parliamone</h1>
+      <p>Hai un progetto in mente? Scrivimi e lo realizziamo insieme.</p>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- FORM -->
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Il tuo nome" autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="la-tua@email.com" autocomplete="email" />
+          <p class="contact-note">
+            Ti arriverà una mail di conferma: il messaggio verrà inviato solo dopo il click sul link.
+          </p>
+        </div>
+        <div class="form-group">
+          <label for="messaggio">Messaggio</label>
+          <textarea id="messaggio" name="messaggio" rows="5" placeholder="Descrivi il tuo progetto..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-send">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Richiedi verifica
+        </button>
+      </form>
+
+      <!-- SOCIAL LINKS -->
+      <div class="contact-links">
+
+        <a href="mailto:fdrcgrasso@email.com" class="contact-link-card">
+          <div class="contact-link-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3eb8f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          </div>
+          <div>
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">fdrcgrasso@email.com</span>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/ffedericograsso" class="contact-link-card">
+          <div class="contact-link-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3eb8f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="#3eb8f0"/></svg>
+          </div>
+          <div>
+            <span class="contact-link-label">Instagram</span>
+            <span class="contact-link-value">@ffedericograsso</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ffedericograsso" class="contact-link-card">
+          <div class="contact-link-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3eb8f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </div>
+          <div>
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">ffedericograsso</span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/federico-alfio-grasso-02285830a/" class="contact-link-card">
+          <div class="contact-link-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3eb8f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2c-1.11 0-2 .89-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">Federico Alfio Grasso</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Federico Alfio Grasso. Tutti i diritti riservati.</span>
+  </footer>
+
+</body>
+</html>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  // Configura in EmailJS:
+  // - un template per la mail di verifica, che includa verify_link e venga inviato all'indirizzo inserito
+  // - un template per la mail finale, che invii il messaggio confermato alla tua casella
+  const EMAILJS_PUBLIC_KEY = "b1xmdRDEeCGe0zZny";
+  const EMAILJS_SERVICE_ID = "service_0r7qi3d";
+  const VERIFICATION_TEMPLATE_ID = "template_ihh1ncd";
+  const CONTACT_TEMPLATE_ID = "template_ihh1ncd";
+  const PENDING_KEY = "portfolioContactPendingVerification";
+  const PENDING_TTL_MS = 24 * 60 * 60 * 1000;
+
+  const form = document.getElementById("contact-form");
+  const btn = document.querySelector(".btn-send");
+  const originalButtonHTML = btn.innerHTML;
+
+  emailjs.init(EMAILJS_PUBLIC_KEY);
+
+  function makeToken() {
+    if (window.crypto && window.crypto.randomUUID) {
+      return window.crypto.randomUUID();
+    }
+
+    const bytes = new Uint8Array(16);
+    if (window.crypto && window.crypto.getRandomValues) {
+      window.crypto.getRandomValues(bytes);
+      return Array.from(bytes, (b) => b.toString(16).padStart(2, "0")).join("");
+    }
+
+    return String(Date.now()) + Math.random().toString(16).slice(2);
+  }
+
+  function getPending() {
+    try {
+      const raw = localStorage.getItem(PENDING_KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch (error) {
+      console.error("Unable to read pending verification:", error);
+      return null;
+    }
+  }
+
+  function savePending(payload) {
+    localStorage.setItem(PENDING_KEY, JSON.stringify(payload));
+  }
+
+  function clearPending() {
+    localStorage.removeItem(PENDING_KEY);
+  }
+
+  function setLoading(isLoading, label) {
+    btn.disabled = isLoading;
+    btn.innerHTML = isLoading ? label : originalButtonHTML;
+  }
+
+  function getCurrentPageUrl() {
+    const url = new URL(window.location.href);
+    url.search = "";
+    url.hash = "";
+    return url.toString();
+  }
+
+  function isPendingExpired(pending) {
+    return !pending || !pending.createdAt || (Date.now() - pending.createdAt) > PENDING_TTL_MS;
+  }
+
+  async function sendVerificationEmail(payload) {
+    return emailjs.send(
+      EMAILJS_SERVICE_ID,
+      VERIFICATION_TEMPLATE_ID,
+      {
+        to_email: payload.email,
+        to_name: payload.nome,
+        verify_link: `${getCurrentPageUrl()}?verify=${encodeURIComponent(payload.token)}`,
+      }
+    );
+  }
+
+  async function sendContactMessage(payload) {
+    return emailjs.send(
+      EMAILJS_SERVICE_ID,
+      CONTACT_TEMPLATE_ID,
+      {
+        from_name: payload.nome,
+        from_email: payload.email,
+        message: payload.messaggio,
+      }
+    );
+  }
+
+  async function completeVerification(token) {
+    const pending = getPending();
+
+    if (!pending) {
+      showToast("Nessuna richiesta di verifica trovata.", "error");
+      return;
+    }
+
+    if (isPendingExpired(pending)) {
+      clearPending();
+      showToast("La verifica è scaduta. Invia di nuovo il modulo.", "error");
+      return;
+    }
+
+    if (pending.token !== token) {
+      showToast("Link di verifica non valido.", "error");
+      return;
+    }
+
+    setLoading(true, "<span>Invio messaggio...</span>");
+
+    try {
+      await sendContactMessage(pending);
+      clearPending();
+      history.replaceState({}, document.title, getCurrentPageUrl());
+      form.reset();
+      showToast("Email verificata e messaggio inviato!", "success");
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      showToast("Verifica completata, ma l'invio è fallito.", "error");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  const verifyToken = new URLSearchParams(window.location.search).get("verify");
+  if (verifyToken) {
+    completeVerification(verifyToken);
+  }
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const messaggio = document.getElementById("messaggio").value.trim();
+
+    if (!nome || !email || !messaggio) {
+      showToast("Compila tutti i campi.", "error");
+      return;
+    }
+
+    const pending = {
+      token: makeToken(),
+      nome,
+      email,
+      messaggio,
+      createdAt: Date.now(),
+    };
+
+    setLoading(true, "<span>Invio verifica...</span>");
+
+    try {
+      savePending(pending);
+      await sendVerificationEmail(pending);
+      showToast("Ti ho inviato una mail di conferma.", "success");
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      clearPending();
+      showToast("Non sono riuscito a inviare la verifica.", "error");
+    } finally {
+      setLoading(false);
+    }
+  });
+
+  // ── Toast notification ──
+  function showToast(msg, type) {
+    const toast = document.createElement("div");
+    toast.className = "toast toast--" + type;
+    toast.textContent = msg;
+    document.body.appendChild(toast);
+
+    // Trigger animazione
+    requestAnimationFrame(() => toast.classList.add("toast--visible"));
+
+    setTimeout(() => {
+      toast.classList.remove("toast--visible");
+      setTimeout(() => toast.remove(), 400);
+    }, 3500);
+  }
+</script>
